@@ -1,0 +1,652 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/10/2025 3:00:23 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-D75OUQP"
+  DTS:CreatorName="DESKTOP-D75OUQP\Rzela"
+  DTS:DTSID="{13DF2A14-69C6-4527-9D32-323633BDEDD1}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LocaleID="2058"
+  DTS:ObjectName="Cargar_DimTiempo"
+  DTS:PackageType="5"
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{0800C3DD-BE6C-4D9A-879C-F0DE689BF0D4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\SQLEXPRESS.DW_toys.sa]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{5867B2A0-EF39-4BC4-93B0-FF672EFB56AD}"
+      DTS:ObjectName="localhost\SQLEXPRESS.DW_toys.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\SQLEXPRESS;User ID=sa;Initial Catalog=DW_toys;TrustServerCertificate=True;Application Name=SSIS-Package-{5867B2A0-EF39-4BC4-93B0-FF672EFB56AD}localhost\SQLEXPRESS.DW_toys.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHJcwXQN/iE+zSuMl2+8nCQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABKhL6BQJWB6lwXipDaO89vVTGM1pNrD+FGRziUGVKKKQAAAAAOgAAAAAIAACAAAADSbgO0V7JCfodqdo+rOj6i81GHKaKo8I2u7Hh20X3LBiAAAACTiLeAaAK2j41002wxns/EcehZJ3cZroOVtFSKUgLu6kAAAADHPypLeD25TUREIe4jHDFwbxI17tBoWYPV/ZF/SQ/4iB5tssrxCLMIt/VtyFTi/l24Rt2q+Uvy2ik7sz7txFdf</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\SQLEXPRESS.TailspinToys2020-US.sa]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{A1F8BBC0-1D5A-44BC-A257-8C80E07A5A1E}"
+      DTS:ObjectName="localhost\SQLEXPRESS.TailspinToys2020-US.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\SQLEXPRESS;User ID=sa;Initial Catalog=TailspinToys2020-US;Persist Security Info=True;TrustServerCertificate=True;Application Name=SSIS-Package-{A1F8BBC0-1D5A-44BC-A257-8C80E07A5A1E}localhost\SQLEXPRESS.TailspinToys2020-US.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHJcwXQN/iE+zSuMl2+8nCQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADlku9sEkr/muWXRHIlSbLMUvGXEjMmKQEI3mEBjX3NxAAAAAAOgAAAAAIAACAAAADNuhSf8cxTyTh1QR0NOA89aiQP5YkeNHMXbuMb5ak0+SAAAAATmfmZtM678FThldiQyx9BuMFSOHmfcIzkB9L4/ZztO0AAAADyELCoIb7q65UDDa6gsfcX/nql4SlxLgYN1IRs9/Tlc71ePgb5D/AXQ2GB+ww4Of3zw2dhU2+u7HwUT60amJ+p</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DimTiempo"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{BB61DB24-420C-4A73-9523-3385E3F16084}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DimTiempo"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DimTiempo\Columna derivada"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+              name="Columna derivada"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DimTiempo\Columna derivada.Inputs[Entrada de columna derivada]"
+                  description="Entrada en la transformación Columna derivada"
+                  name="Entrada de columna derivada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DimTiempo\Columna derivada.Inputs[Entrada de columna derivada].Columns[TheDate]"
+                      cachedDataType="dbDate"
+                      cachedName="TheDate"
+                      lineageId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada]"
+                  description="Salida predeterminada de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  name="Salida de columna derivada"
+                  synchronousInputId="Package\DimTiempo\Columna derivada.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Day]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Day]"
+                      name="Day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">[DATEPART]("day",#{Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEPART("day",TheDate)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Month]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Month]"
+                      name="Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">[DATEPART]("month",#{Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEPART("month",TheDate)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Quarter]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Quarter]"
+                      name="Quarter"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">[DATEPART]("quarter",#{Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEPART("quarter",TheDate)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">[DATEPART]("year",#{Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEPART("year",TheDate)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[TimeKey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[TimeKey]"
+                      name="TimeKey"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">(DT_I4)((DT_WSTR,4)[YEAR](#{Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]}) + [RIGHT]("0" + (DT_WSTR,2)[MONTH](#{Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]}),2) + [RIGHT]("0" + (DT_WSTR,2)[DAY](#{Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]}),2))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)((DT_WSTR,4)YEAR(TheDate) + RIGHT("0" + (DT_WSTR,2)MONTH(TheDate),2) + RIGHT("0" + (DT_WSTR,2)DAY(TheDate),2))</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DimTiempo\Columna derivada.Outputs[Salida de error de columna derivada]"
+                  description="Salida de error de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de columna derivada"
+                  synchronousInputId="Package\DimTiempo\Columna derivada.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DimTiempo\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DimTiempo\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DimTiempo\Destino de ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Destino de ADO NET"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."DimTime"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DimTiempo\Destino de ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\SQLEXPRESS.DW_toys.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\SQLEXPRESS.DW_toys.sa]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Day]"
+                      cachedDataType="i4"
+                      cachedName="Day"
+                      externalMetadataColumnId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Day]"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Day]" />
+                    <inputColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Month]"
+                      cachedDataType="i4"
+                      cachedName="Month"
+                      externalMetadataColumnId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Month]"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Month]" />
+                    <inputColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Quarter]"
+                      cachedDataType="i4"
+                      cachedName="Quarter"
+                      externalMetadataColumnId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Quarter]"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Quarter]" />
+                    <inputColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      externalMetadataColumnId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Year]"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[TimeKey]"
+                      cachedDataType="i4"
+                      cachedName="TimeKey"
+                      externalMetadataColumnId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[TimeKey]"
+                      lineageId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada].Columns[TimeKey]" />
+                    <inputColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[MonthName]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="MonthName"
+                      externalMetadataColumnId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[MonthName]"
+                      lineageId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[MonthName]" />
+                    <inputColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[TheDate]"
+                      cachedDataType="dbDate"
+                      cachedName="TheDate"
+                      externalMetadataColumnId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Date]"
+                      lineageId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[TimeKey]"
+                      dataType="i4"
+                      name="TimeKey" />
+                    <externalMetadataColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Date]"
+                      dataType="dbTimeStamp"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Day]"
+                      dataType="i4"
+                      name="Day" />
+                    <externalMetadataColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Month]"
+                      dataType="i4"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[MonthName]"
+                      dataType="wstr"
+                      length="20"
+                      name="MonthName" />
+                    <externalMetadataColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Quarter]"
+                      dataType="i4"
+                      name="Quarter" />
+                    <externalMetadataColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DimTiempo\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DimTiempo\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DimTiempo\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DimTiempo\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DimTiempo\Origen de ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="Origen de ADO NET"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT DISTINCT
+    OrderDate AS TheDate,
+    DATENAME(MONTH, OrderDate) AS MonthName
+FROM Sales WHERE OrderDate IS NOT NULL
+UNION
+SELECT DISTINCT
+    ShipDate,
+    DATENAME(MONTH, ShipDate)
+FROM Sales WHERE ShipDate IS NOT NULL</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DimTiempo\Origen de ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\SQLEXPRESS.TailspinToys2020-US.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\SQLEXPRESS.TailspinToys2020-US.sa]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[TheDate]"
+                      lineageId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[TheDate]"
+                      name="TheDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[MonthName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[MonthName]"
+                      length="30"
+                      lineageId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[MonthName]"
+                      name="MonthName"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[TheDate]"
+                      dataType="dbDate"
+                      name="TheDate" />
+                    <externalMetadataColumn
+                      refId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[MonthName]"
+                      dataType="wstr"
+                      length="30"
+                      name="MonthName" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[TheDate]"
+                      dataType="dbDate"
+                      lineageId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[TheDate]"
+                      name="TheDate" />
+                    <outputColumn
+                      refId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[MonthName]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[MonthName]"
+                      name="MonthName" />
+                    <outputColumn
+                      refId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DimTiempo.Paths[Salida de columna derivada]"
+              endId="Package\DimTiempo\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de columna derivada"
+              startId="Package\DimTiempo\Columna derivada.Outputs[Salida de columna derivada]" />
+            <path
+              refId="Package\DimTiempo.Paths[Salida de origen de ADO NET]"
+              endId="Package\DimTiempo\Columna derivada.Inputs[Entrada de columna derivada]"
+              name="Salida de origen de ADO NET"
+              startId="Package\DimTiempo\Origen de ADO NET.Outputs[Salida de origen de ADO NET]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="135,42"
+          Id="Package\DimTiempo"
+          TopLeft="458,354" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DimTiempo">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="183,42"
+          Id="Package\DimTiempo\Destino de ADO NET"
+          TopLeft="569,498" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\DimTiempo\Columna derivada"
+          TopLeft="525,354" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\DimTiempo\Origen de ADO NET"
+          TopLeft="313,209" />
+        <EdgeLayout
+          Id="Package\DimTiempo.Paths[Salida de origen de ADO NET]"
+          TopLeft="402.5,251">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="206.5,103"
+              Start="0,0"
+              End="206.5,95.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47.5"
+                    Point2="0,51.5"
+                    Point3="4,51.5" />
+                  <mssgle:LineSegment
+                    End="202.5,51.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="202.5,51.5"
+                    Point2="206.5,51.5"
+                    Point3="206.5,55.5" />
+                  <mssgle:LineSegment
+                    End="206.5,95.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DimTiempo.Paths[Salida de columna derivada]"
+          TopLeft="609,396">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="51.5,102"
+              Start="0,0"
+              End="51.5,94.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47"
+                    Point2="0,51"
+                    Point3="4,51" />
+                  <mssgle:LineSegment
+                    End="47.5,51" />
+                  <mssgle:CubicBezierSegment
+                    Point1="47.5,51"
+                    Point2="51.5,51"
+                    Point3="51.5,55" />
+                  <mssgle:LineSegment
+                    End="51.5,94.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DimTiempo\Destino de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DimTiempo\Origen de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

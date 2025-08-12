@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_FactSales.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|solutionrelative:DW_Toys_ETL\\Cargar_FactSales.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimState.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|solutionrelative:DW_Toys_ETL\\Cargar_DimState.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimRegion.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|solutionrelative:DW_Toys_ETL\\Cargar_DimRegion.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimJunk.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|solutionrelative:DW_Toys_ETL\\Cargar_DimJunk.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimTiempo.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|solutionrelative:DW_Toys_ETL\\Cargar_DimTiempo.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimProduct.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{7532BF3C-EE41-D17A-94F1-D6575D4F54C0}|DW_Toys_ETL\\DW_Toys_ETL.dtproj|solutionrelative:DW_Toys_ETL\\Cargar_DimProduct.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cargar_FactSales.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_FactSales.dtsx",
+              "RelativeDocumentMoniker": "DW_Toys_ETL\\Cargar_FactSales.dtsx",
+              "ToolTip": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_FactSales.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "DW_Toys_ETL\\Cargar_FactSales.dtsx [Dise\u00F1o]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-08-11T19:24:22.106Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cargar_DimJunk.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimJunk.dtsx",
+              "RelativeDocumentMoniker": "DW_Toys_ETL\\Cargar_DimJunk.dtsx",
+              "ToolTip": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimJunk.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "DW_Toys_ETL\\Cargar_DimJunk.dtsx [Dise\u00F1o]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-08-11T18:26:01.403Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cargar_DimRegion.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimRegion.dtsx",
+              "RelativeDocumentMoniker": "DW_Toys_ETL\\Cargar_DimRegion.dtsx",
+              "ToolTip": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimRegion.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "DW_Toys_ETL\\Cargar_DimRegion.dtsx [Dise\u00F1o]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-08-11T10:01:03.983Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cargar_DimState.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimState.dtsx",
+              "RelativeDocumentMoniker": "DW_Toys_ETL\\Cargar_DimState.dtsx",
+              "ToolTip": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimState.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "DW_Toys_ETL\\Cargar_DimState.dtsx [Dise\u00F1o]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-08-11T05:06:19.528Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cargar_DimProduct.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimProduct.dtsx",
+              "RelativeDocumentMoniker": "DW_Toys_ETL\\Cargar_DimProduct.dtsx",
+              "ToolTip": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimProduct.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "DW_Toys_ETL\\Cargar_DimProduct.dtsx [Dise\u00F1o]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-08-10T10:10:03.973Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cargar_DimTiempo.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimTiempo.dtsx",
+              "RelativeDocumentMoniker": "DW_Toys_ETL\\Cargar_DimTiempo.dtsx",
+              "ToolTip": "D:\\Github\\EjercicioPracticoZF17004_V2\\DW_Toys_ETL\\DW_Toys_ETL\\Cargar_DimTiempo.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "DW_Toys_ETL\\Cargar_DimTiempo.dtsx [Dise\u00F1o]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-08-10T09:00:23.631Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
